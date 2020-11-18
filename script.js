@@ -69,14 +69,27 @@ function displayLibrary(array){
       const index = e.target.getAttribute('data-attribute')
       removeBookFromLibrary(index)
       displayLibrary(myLibrary)
-
-
     })
+    const readBtn = document.createElement('button');
+  
+    if(book.read){
+      readBtn.textContent = "I have read this book";
+    }else{
+      readBtn.textContent = "I haven't read it yet?";
+    }
+
+    readBtn.addEventListener("click",function(e){
+   
+      book.read = !book.read
+      displayLibrary(myLibrary)
+    })
+
 
     container.appendChild(div);
     div.appendChild(title)
     div.appendChild(description)
     div.appendChild(deleteBookBtn)
+    div.appendChild(readBtn)
   }
 
 }

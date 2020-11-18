@@ -5,3 +5,10 @@ form {
 .display {
   display: block;
 }
+
+.read {
+  background-color: green;
+}
+.unread {
+  background-color: red;
+}
