@@ -42,9 +42,18 @@ function displayLibrary(array){
     div.appendChild(title)
     div.appendChild(description)
 
-
   }
 }
+
+const btn = document.querySelector('.btn')
+const form = document.querySelector('.form')
+
+btn.addEventListener("click",function(e){
+  form.classList.toggle("display");
+})
+
+
+
 console.log(myLibrary);
 
 displayLibrary(myLibrary)
