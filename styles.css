@@ -1,15 +1,80 @@
-form {
-  display: none;
+.container {
+  max-width: 80vw;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container > div {
+  padding: 20px;
+  flex: 0 1 400px;
+}
+
+.add__book {
+  max-width: 80vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.btn,
+.btn:focus,
+.btn:visited {
+  background-color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn:active {
+  border: none;
+}
+
+.btn:visited {
+  border: none;
+}
+.btn:hover {
+  background-color: rgb(5, 187, 60);
+  border: none;
+}
+
+.form {
+  transform: translate(9999px);
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0 10px 20px;
 }
 
 .display {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+  transform: translate(0);
 }
 
-.read {
-  background-color: green;
-}
+.submit {
+  width: 200px;
+  flex: 0 0 20px;
 
-.unread {
   background-color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.submit:hover {
+  background-color: rgb(5, 187, 60);
 }
