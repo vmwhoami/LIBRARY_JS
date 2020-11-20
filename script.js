@@ -6,6 +6,10 @@ const page = document.querySelector('#page');
 const price = document.querySelector('#price');
 const read = document.querySelector('#read');
 
+
+
+
+
 const myLibrary = [];
 
 function Book(title, author, pages, price, read) {
