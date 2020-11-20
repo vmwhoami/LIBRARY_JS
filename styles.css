@@ -76,6 +76,21 @@
   padding: 10px 20px;
   border-radius: 5px;
 }
+
+.form_field {
+  flex: 0 0 40px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form_field small {
+  flex: 0 0 100%;
+  margin-left: 20px;
+  visibility: hidden;
+}
+
 .display {
   display: flex;
   flex-direction: column;

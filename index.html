@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="add__book">
-    <button class="btn">Add a Book</button>
-    <form class="form">
-      <label for="title">Book title</label>
-      <input type="text" id="title">
-
-      <label for="author">Book author</label>
-      <input type="text" id="author">
-
-      <label for="page">Number of Pages</label>
-      <input type="number" id="page">
-
-      <label for="price">Book Price</label>
-      <input type="number" id="price">
-
-      <label for="read">Have you read this book?</label>
-      <input type="checkbox" id="read">
-      <button type="submit" class="submit">Create book</button>
-    </form>  
-  </div>
-  <div class="container">
-  </div>
-</body>
-<script defer src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="add__book">
+      <button class="btn">Add a Book</button>
+      <form class="form">
+        <div class="form_field">
+          <label for="title">Book title</label>
+          <input type="text" id="title" />
+          <small>Error Message</small>
+        </div>
+        <div class="form_field">
+          <label for="author">Book author</label>
+          <input type="text" id="author" />
+          <small>Error Message</small>
+        </div>
+        <div class="form_field">
+          <label for="page">Number of Pages</label>
+          <input type="number" id="page" />
+          <small>Error Message</small>
+        </div>
+        <div class="form_field">
+          <label for="price">Book Price</label>
+          <input type="number" id="price" />
+          <small>Error Message</small>
+        </div>
+        <div class="form_field">
+          <label for="read">Have you read this book?</label>
+          <input type="checkbox" id="read" />
+        </div>
+        <button type="submit" class="submit">Create book</button>
+      </form>
+    </div>
+    <div class="container"></div>
+  </body>
+  <script defer src="script.js"></script>
 </html>
