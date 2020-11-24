@@ -3,12 +3,14 @@
   overflow: hidden;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container > div {
+  flex: 1 1 200px;
   margin: 10px;
   padding: 20px;
-  flex: 0 1 400px;
+
   text-align: center;
   background-color: steelblue;
   transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -87,8 +89,14 @@
 
 .form_field small {
   flex: 0 0 100%;
-  margin-left: 20px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   visibility: hidden;
+  color: red;
+}
+.form_field.error small {
+  visibility: visible;
 }
 
 .display {
